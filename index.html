@@ -14,64 +14,99 @@
       margin: 40px;
       color: #333;
     }
+
     h1 {
       color: #333;
       text-align: center;
       margin-bottom: 20px;
     }
+
     h2 {
       color: #0066cc;
     }
+
     p {
       font-size: 1.1em;
       line-height: 1.6;
     }
+
     a {
       font-weight: bold;
       color: #0066cc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     img {
       display: block;
       margin: 30px auto;
       max-width: 100%;
       border-radius: 8px;
     }
+
     hr {
       border: 1px solid #ddd;
       margin: 40px 0;
     }
+
     .section {
       margin-bottom: 40px;
     }
+
     .button-group {
       text-align: center;
       margin-bottom: 30px;
     }
+
     .button-group a {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
-      margin: 0 10px;
+      margin: 8px 10px;
       padding: 12px 24px;
-      background-color: #0066cc;
-      color: white;
-      border-radius: 8px;
+      background-color: #ffffff;
+      color: #0066cc;
+      border: 2px solid #0066cc;
+      border-radius: 10px;
       text-decoration: none;
       font-size: 1em;
       font-weight: bold;
-      transition: background-color 0.2s ease;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
     }
+
     .button-group a:hover {
-      background-color: #004c99;
+      background-color: #f2f8ff;
+      color: #004c99;
+      border-color: #004c99;
       text-decoration: none;
+      transform: translateY(-1px);
     }
+
     .button-group i,
     .button-group .emoji {
       font-size: 1.1em;
+    }
+
+    .button-logo {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      display: inline-block;
+      margin: 0;
+      border-radius: 0;
+      vertical-align: middle;
+    }
+
+    .main-image {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -80,13 +115,17 @@
   <h1>AV-SyncBench</h1>
 
   <div class="button-group">
+    <a href="https://modelscope.cn/datasets/coming245/AV-SyncBench" target="_blank">
+      <img src="109945100.png" alt="ModelScope Logo" class="button-logo">
+      <span>ModelScope</span>
+    </a>
     <a href="https://huggingface.co/datasets/coming245/AV-SyncBench" target="_blank">
       <span class="emoji">🤗</span>
-      <span>Dataset</span>
+      <span>Hugging Face</span>
     </a>
     <a href="https://github.com/fgt7t6g/AV-SyncBench" target="_blank">
       <i class="fa-brands fa-github"></i>
-      <span>Code</span>
+      <span>GitHub</span>
     </a>
   </div>
 
@@ -97,7 +136,7 @@
     </p>
   </div>
 
-  <img src="overview_img.png" alt="Overview Image">
+  <img src="overview_img.png" alt="Overview Image" class="main-image">
 
   <hr>
 
